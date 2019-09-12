@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         mAuth = FirebaseAuth.getInstance()
         logout_btn.setOnClickListener(this)
+        profile_btn.setOnClickListener(this)
     }
 
 
@@ -29,6 +30,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 mAuth.signOut()
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
+            }
+        }
+
+        when (view.id) {
+            R.id.profile_btn -> {
+                startActivity(Intent(this, ProfileActivity::class.java))
             }
         }
 
