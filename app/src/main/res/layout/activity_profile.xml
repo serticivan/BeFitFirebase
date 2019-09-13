@@ -36,10 +36,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:text="Ivan"
                 android:textSize="30dp"
                 app:layout_constraintLeft_toRightOf="@+id/profile_picture"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Username" />
 
         </LinearLayout>
 
